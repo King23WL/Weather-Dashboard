@@ -85,7 +85,7 @@ function futureCondition(lat, lon) {
         console.log(futureResponse);
         $("#fiveDay").empty();
 
-        for (let i = 1; i < 6; i++) {
+        for (let i = 0; i < 5; i++) {
             var cityInfo = {
                 date: futureResponse.daily[i].dt,
                 icon: futureResponse.daily[i].weather[0].icon,
